@@ -1,0 +1,41 @@
+.certificate-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .certificate-card {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 15px;
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .certificate-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .certificate-card p {
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .certificate-link {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+  }
+  
+  .certificate-link:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,83 @@
+/* Apply styles to the entire app container */
+.App {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(to right, #ffa600f3 25%, #ffa600f3 75%);
+  /* Dark gray on the sides and orange in the center */
+
+  /* Add interactivity */
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Center-align the header text and add some spacing */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  /* Add hover effect to the header */
+  transition: color 0.3s ease;
+}
+
+header:hover {
+  color: #f5f5f5; /* Change header color on hover */
+}
+
+/* Add hover effect to all heading elements */
+h1, h2, h3, h4, h5, h6 {
+  transition: color 0.3s ease;
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+  color: #f5f5f5; /* Change heading color on hover */
+}
+
+/* Add spacing between sections */
+section {
+  margin-bottom: 40px;
+}
+
+/* Center-align the footer text and add spacing at the top */
+footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Data science-related icons */
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+/* Skill list styling */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-item {
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item:hover {
+  background-color: #f98009;
+  transform: scale(1.05);
+}
+
+.skill-item .icon {
+  margin-right: 10px;
+  color: #363636;
+}
+
+.skill-item:hover .icon {
+  color: #fff;
+}
