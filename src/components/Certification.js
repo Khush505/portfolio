@@ -1,12 +1,11 @@
 import React from 'react';
-import './Certificates.css';
 
 const certificates = [
-    { id: 1, name: 'Data Analytics and Visualization', file: '/certificates/Accenture_Certificate.jpg' },
-    { id: 2, name: 'Machine Learning and AI Certification', file: '/certificates/Diabetic_Retinopathy.jpg' },
-    { id: 3, name: 'Networking Event - Bright Network', file: '/certificates/Internship-Bright_Network.png' },
-    { id: 4, name: 'Linkedin Workshop - Intern Group', file: '/certificates/Khushboo_Masih_DS_Internship.jpg' },
-    { id: 5, name: 'Data Science Internship - Data Glacier', file: '/certificates/Khushboo_Masih_Event_Certificate.jpg' },
+    { id: 1, name: 'Data Analytics and Visualization', file: `${process.env.PUBLIC_URL}/certificates/Accenture_Certificate.jpg` },
+    { id: 2, name: 'Machine Learning and AI Certification', file: `${process.env.PUBLIC_URL}/certificates/Diabetic_Retinopathy.jpg` },
+    { id: 3, name: 'Data Science Internship - Data Glacier', file: `${process.env.PUBLIC_URL}/certificates/Khushboo_Masih_Event_Certificate.jpg` },
+    { id: 4, name: 'Networking Event - Bright Network', file: `${process.env.PUBLIC_URL}/certificates/Internship-Bright_Network.png` },
+    { id: 5, name: 'Linkedin Workshop - Intern Group', file: `${process.env.PUBLIC_URL}/certificates/Khushboo_Masih_DS_Internship.jpg` },
     // Add more certificates as needed
 ];
 
@@ -26,7 +25,7 @@ function Certificates() {
                                 <img src={cert.file} alt={cert.name} className="certificate-image" />
                             </a>
                         ) : (
-                            <a href={cert.file}  rel="noopener noreferrer" className="certificate-link">
+                            <a href={cert.file} target="_blank" rel="noopener noreferrer" className="certificate-link">
                                 {cert.name}
                             </a>
                         )}

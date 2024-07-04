@@ -1,37 +1,32 @@
+#education {
+  padding: 20px;
+  /*background-color: #f0f0f0;*/
+}
+
 .education-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .education-item {
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    padding: 15px;
-  }
-  
-  .education-item h3 {
-    margin: 0 0 5px 0;
-    color: #333;
-  }
-  
-  .education-item p {
-    margin: 0 0 10px 0;
-    color: #666;
-  }
-  
-  .degree-link {
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 0.9em;
-    transition: background-color 0.3s;
-  }
-  
-  .degree-link:hover {
-    background-color: #0056b3;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.education-item {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 15px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: calc(33.333% - 20px);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.education-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.degree-link {
+  color: blue;
+  text-decoration: underline;
+}

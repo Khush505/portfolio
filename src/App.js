@@ -4,6 +4,7 @@ import Projects from './components/Projects';
 import Certificates from './components/Certificates';
 import Education from './components/Education';
 import './App.css';
+import TestLinks from "./components/Certification";
 
 function App() {
   return (
@@ -15,9 +16,9 @@ function App() {
           <About/>
           <Projects/>
           <Education/>
-          <Certificates/>
-        
-          
+          {/*<Certificates/>*/}
+
+          <TestLinks />
           
         </main>
         <footer>
