@@ -1,8 +1,8 @@
 import React from 'react';
 import About from './components/About';
 import Projects from './components/Projects';
-import Certificates from './components/Certificates';
 import Education from './components/Education';
+//import Certificates from './Certificates'; // eslint-disable-line no-unused-vars
 import './App.css';
 import TestLinks from "./components/Certification";
 
@@ -16,8 +16,6 @@ function App() {
           <About/>
           <Projects/>
           <Education/>
-          {/*<Certificates/>*/}
-
           <TestLinks />
           
         </main>
